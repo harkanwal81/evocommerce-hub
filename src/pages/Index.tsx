@@ -12,7 +12,7 @@ const Index = () => {
         <title>ModernShop - Premium Quality Products for Modern Living</title>
         <meta
           name="description"
-          content="Discover premium quality products at ModernShop. Shop electronics, accessories, bags, and footwear with free shipping on orders over $100."
+          content="Discover premium quality products at ModernShop. Shop electronics, accessories, bags, and footwear with free shipping on orders over Rs1000."
         />
         <meta name="keywords" content="online shopping, premium products, electronics, accessories, fashion, modern lifestyle" />
       </Helmet>

@@ -53,7 +53,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           </p>
           <div className="flex items-center justify-between">
             <span className="text-xl font-bold text-primary">
-              ${product.price.toFixed(2)}
+              Rs{product.price.toFixed(2)}
             </span>
             <button
               onClick={handleAddToCart}

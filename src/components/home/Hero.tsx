@@ -29,7 +29,7 @@ const Hero = () => {
           {/* Subheading */}
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Elevate your lifestyle with our curated collection of premium products. 
-            Free shipping on orders over $100.
+            Free shipping on orders over Rs1000.
           </p>
 
           {/* CTA Buttons */}
