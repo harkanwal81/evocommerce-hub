@@ -1,13 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from 'react-helmet-async';
+import Layout from '@/components/layout/Layout';
+import Hero from '@/components/home/Hero';
+import Features from '@/components/home/Features';
+import ProductGrid from '@/components/product/ProductGrid';
+import { products } from '@/data/products';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>ModernShop - Premium Quality Products for Modern Living</title>
+        <meta
+          name="description"
+          content="Discover premium quality products at ModernShop. Shop electronics, accessories, bags, and footwear with free shipping on orders over $100."
+        />
+        <meta name="keywords" content="online shopping, premium products, electronics, accessories, fashion, modern lifestyle" />
+      </Helmet>
+
+      <Layout>
+        <Hero />
+        <Features />
+        <div className="container mx-auto px-4">
+          <ProductGrid products={products} title="Featured Products" />
+        </div>
+      </Layout>
+    </>
   );
 };
 
